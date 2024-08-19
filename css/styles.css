@@ -10,6 +10,24 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+
+ .text-grey-400 {
+  color: #adb5bd !important;
+ }
+.text-grey-500 {
+  color: #6c757d !important;
+}
+
+
+.text-green-500 {
+  color: #198754 !important;
+}
+
+.text-red-500 {
+  color: #dc3545 !important;
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10928,13 +10946,65 @@ hr.divider-light {
 
 header.masthead {
   padding-top: 10rem;
+
   padding-bottom: calc(10rem - 4.5rem);
   background: linear-gradient(to bottom, rgba(92, 77, 66, 0.6) 0%, rgba(92, 77, 66, 0.6) 100%), url("../assets/img/Jakob.png");
-  background-position: center;
+  background-position: center right;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
+
+@media (max-width: 1300px) {
+  header.masthead {
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.6) 0%, rgba(92, 77, 66, 0.6) 100%), url("../assets/img/Jakob_Small.png");
+    background-position: 20%  right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  
+  }
+}
+
+@media (max-width: 1200px) {
+  header.masthead {
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.6) 0%, rgba(92, 77, 66, 0.6) 100%), url("../assets/img/Jakob_Small2.png");
+    background-position: 20% right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  
+  }
+}
+
+@media (max-width: 991px) {
+  header.masthead {
+    padding-top: 7rem;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.6) 0%, rgba(92, 77, 66, 0.6) 100%), url("../assets/img/Jakob_Small3.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  
+  }
+
+  /* make child div go top instead of center */
+
+  header.masterhead .container {
+    padding-top: 0;
+   
+  }
+
+  header.masthead .container div  {
+    height: 75%;
+    display: block;
+    justify-content: start;
+    align-items: start;
+  }
+}
+
+
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
 }
