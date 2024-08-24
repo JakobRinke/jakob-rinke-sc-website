@@ -60,7 +60,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 57, 144, 219;
+  --bs-primary-rgb: 53, 101, 196;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -10934,7 +10934,7 @@ hr.divider-light {
     color: #212529;
   }
   #mainNav.navbar-shrink .navbar-brand:hover {
-    color: #f4623a;
+    color: #433af4;
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
     color: #212529;
@@ -10954,6 +10954,11 @@ header.masthead {
   background-size: cover;
 }
 
+.bg-mob {
+  background-color: rgba(92, 77, 66, 0.4);
+  padding: 0;
+}
+
 @media (max-width: 991px) {
   header.masthead {
     padding-top: 7rem;
@@ -10964,6 +10969,8 @@ header.masthead {
     background-size: cover;
   
   }
+
+  
 
   /* make child div go top instead of center */
 
@@ -10978,6 +10985,8 @@ header.masthead {
     justify-content: start;
     align-items: start;
   }
+
+  
 }
 
 
