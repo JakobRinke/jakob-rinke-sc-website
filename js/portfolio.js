@@ -19,3 +19,6 @@ if (project.link) {
 }
 
 document.getElementById('project-image').src = "assets/img/portfolio/thumbnails/" + projectName+ ".jpg";
+
+document.title = document.title.replace("Portfolio", project.name);
+document.description = project.description;
