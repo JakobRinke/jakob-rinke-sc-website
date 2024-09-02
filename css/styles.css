@@ -10874,7 +10874,7 @@ hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;
   margin: 1.5rem auto;
-  background-color: #3e9df0;
+  background-color: var(--bs-primary);
   opacity: 1;
 }
 
